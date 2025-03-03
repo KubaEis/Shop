@@ -27,7 +27,7 @@ public class Main {
                     carDatabase.addCars(pocet);
                     carDatabase.printCarInGoodCondition();
                     carDatabase.printCarWithMostDrivenKm();
-                    carDatabase.printCarInGoodCondition();
+                    carDatabase.printInterestingThings();
                     break;
                 case "2":
                     BookStore knihkupectvi = new BookStore();
@@ -48,7 +48,9 @@ public class Main {
                     pocet = sc.nextInt();
                     sc.nextLine();
                     items.addItems(pocet);
-                    items.printInfo();
+                    items.printFridgeWithA();
+                    items.printFridgeCount();
+                    items.printInterestingThings();
                     break;
                 case "5":
                     Library library = new Library();
