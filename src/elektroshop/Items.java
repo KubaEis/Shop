@@ -13,16 +13,16 @@ public class Items {
      */
     public void addItems(int count) {
       items = new Fridge[count];
-        for (int i=0; i<count; count++){
-            System.out.println("Lednice "+count+".");
-            System.out.println("Jakou má lednice elektrickou náročnost? (zapiš jen znak)" +
-                                                                        "(A – very low\n" +
+        for (int i=0; i<count; i++){
+            System.out.println("Lednice "+i+".");
+            System.out.println("Jakou má lednice elektrickou náročnost? (zapiš jen znak)\n" +
+                                                                        "A – very low\n" +
                                                                         "B – low\n" +
                                                                         "C – normal\n" +
                                                                         "D – above normal\n" +
                                                                         "E – high\n" +
                                                                         "F – very high\n" +
-                                                                        "G – extremely high)");
+                                                                        "G – extremely high");
             String elnaro = sc.nextLine();
             ElectricityUse narocnost = ElectricityUse.valueOf(elnaro);
             System.out.println("Jakou má ladnice znacku?");
@@ -33,6 +33,7 @@ public class Items {
             int rok = sc.nextInt();
             sc.nextLine();
             Fridge f = new Fridge(narocnost,znacka,model,rok);
+            items[i]=f;
         }
 
     }
@@ -54,7 +55,7 @@ public class Items {
     public void printFridgeWithA(){
         System.out.println("Lednice s energickou náročností A");
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.A)){
+            if (items[i].getElectricityUse() == ElectricityUse.A){
                 items[i].printInfo();
             }
         }
@@ -71,37 +72,37 @@ public class Items {
         int pocetF=0;
         int pocetG=0;
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.A)){
+            if (items[i].getElectricityUse() == (ElectricityUse.A)){
                 pocetA ++;
             }
         }
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.B)){
+            if (items[i].getElectricityUse() == (ElectricityUse.B)){
                 pocetB ++;
             }
         }
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.C)){
+            if (items[i].getElectricityUse() == (ElectricityUse.C)){
                 pocetC ++;
             }
         }
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.D)){
+            if (items[i].getElectricityUse() == (ElectricityUse.D)){
                 pocetD ++;
             }
         }
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.E)){
+            if (items[i].getElectricityUse() == (ElectricityUse.E)){
                 pocetE ++;
             }
         }
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.F)){
+            if (items[i].getElectricityUse() == (ElectricityUse.F)){
                 pocetF ++;
             }
         }
         for (int i=0; i<items.length; i++){
-            if (items[i].getElectricityUse().equals(ElectricityUse.G)){
+            if (items[i].getElectricityUse() == (ElectricityUse.G)){
                 pocetG ++;
             }
         }
