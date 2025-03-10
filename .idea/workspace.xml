@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd007f48-d789-4bfc-b986-77daddb6162f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/cinema/Gender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elektroshop/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elektroshop/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinema/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cinema/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cinema/People.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -94,6 +98,7 @@
       <workItem from="1740477620138" duration="4949000" />
       <workItem from="1740999147661" duration="4394000" />
       <workItem from="1741083735275" duration="1476000" />
+      <workItem from="1741603698576" duration="3894000" />
     </task>
     <servers />
   </component>
